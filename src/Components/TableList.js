@@ -19,7 +19,7 @@ const TableList = props => {
   };
 
   return (
-    <div className="col-10">
+    <div className="col">
       <div className="card">
         <div className="card-body">
           <table
