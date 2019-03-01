@@ -1,0 +1,124 @@
+[
+  {
+    "441": {
+      "sigla": "CAN",
+      "nome": "Niterói",
+      "segmento": "CLIENTE"
+    },
+    "442": {
+      "sigla": "CAJA",
+      "nome": "Jahu",
+      "segmento": "CLIENTE"
+    },
+    "443": {
+      "sigla": "CAJ",
+      "nome": "Juturnaiba",
+      "segmento": "CLIENTE"
+    },
+    "444": {
+      "sigla": "CAPAM",
+      "nome": "Pará de Minas",
+      "segmento": "CLIENTE"
+    },
+    "445": {
+      "sigla": "CAI",
+      "nome": "Imperador",
+      "segmento": "CLIENTE"
+    },
+    "446": {
+      "sigla": "CAPY",
+      "nome": "Paraty",
+      "segmento": "CLIENTE"
+    },
+    "447": {
+      "sigla": "CANF",
+      "nome": "Nova Friburgo",
+      "segmento": "CLIENTE"
+    },
+    "448": {
+      "sigla": "CAV",
+      "nome": "Votorantim",
+      "segmento": "CLIENTE"
+    },
+    "449": {
+      "sigla": "CAA",
+      "nome": "Araçoiaba",
+      "segmento": "CLIENTE"
+    },
+    "450": {
+      "sigla": "CAAN",
+      "nome": "Agulhas Negras",
+      "segmento": "CLIENTE"
+    },
+    "451": {
+      "sigla": "CAP",
+      "nome": "Paraíba",
+      "segmento": "CLIENTE"
+    },
+    "452": {
+      "sigla": "CAN",
+      "nome": "Niterói",
+      "segmento": "Ñ CLIENTE"
+    },
+    "453": {
+      "sigla": "CAJA",
+      "nome": "Jahu",
+      "segmento": "Ñ CLIENTE"
+    },
+    "454": {
+      "sigla": "CAJ",
+      "nome": "Juturnaiba",
+      "segmento": "Ñ CLIENTE"
+    },
+    "455": {
+      "sigla": "CAPAM",
+      "nome": "Pará de Minas",
+      "segmento": "Ñ CLIENTE"
+    },
+    "456": {
+      "sigla": "CAI",
+      "nome": "Imperador",
+      "segmento": "Ñ CLIENTE"
+    },
+    "457": {
+      "sigla": "CAPY",
+      "nome": "Paraty",
+      "segmento": "Ñ CLIENTE"
+    },
+    "458": {
+      "sigla": "CANF",
+      "nome": "Nova Friburgo",
+      "segmento": "Ñ CLIENTE"
+    },
+    "459": {
+      "sigla": "CAV",
+      "nome": "Votorantim",
+      "segmento": "Ñ CLIENTE"
+    },
+    "460": {
+      "sigla": "CAA",
+      "nome": "Araçoiaba",
+      "segmento": "Ñ CLIENTE"
+    },
+    "461": {
+      "sigla": "CAAN",
+      "nome": "Agulhas Negras",
+      "segmento": "Ñ CLIENTE"
+    },
+    "462": {
+      "sigla": "CAP",
+      "nome": "Paraiba",
+      "segmento": "Ñ CLIENTE"
+    },
+    "463": {
+      "sigla": "SAC",
+      "nome": "CONSOLIDADO",
+      "segmento": null
+    },
+    "466": {
+      "sigla": null,
+      "nome": "SEM PROTOCOLO",
+      "segmento": null
+    }
+  }
+]
