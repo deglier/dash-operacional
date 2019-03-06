@@ -4,6 +4,7 @@ import AgtsGrafico from "./AgtsGrafico";
 import utils from "../functions";
 import NsGrafico from "./NsGrafico";
 import Fila from "./Fila";
+import Indicator from "./indicator";
 
 const Indicadores = props => {
   const AgtsDisponiveis = utils.maximo(props.grupos, "AgtsDisponiveis");
@@ -27,6 +28,42 @@ const Indicadores = props => {
           AgtsFalando={AgtsFalando}
         />
       </Card>
+      {!props.isFila ? (
+        <React.Fragment>
+          <Card>
+            <Indicator
+              indicador="TMA"
+              bigger
+              valor={utils.tmaGeral(props.grupos)}
+            />
+          </Card>
+          <Card>
+            <Indicator
+              indicador="TME"
+              bigger
+              valor={utils.tmeGeral(props.grupos)}
+            />
+          </Card>
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <Card>
+            <Indicator
+              indicador="Chamada Mais Antiga"
+              bigger
+              valor={utils.gruposByMaisAntiga(props.grupos)}
+            />
+          </Card>
+          <div className="row no-gutters">
+            <Card col="6">
+              <Indicator indicador="TMA" valor={utils.tmaGeral(props.grupos)} />
+            </Card>
+            <Card col="6">
+              <Indicator indicador="TME" valor={utils.tmeGeral(props.grupos)} />
+            </Card>
+          </div>
+        </React.Fragment>
+      )}
     </div>
   );
 };
