@@ -8,7 +8,7 @@ const Indicator = ({ indicador, valor, bigger }) => {
       {bigger ? (
         <h4 className="mb-0">{utils.SecToHora(valor)}</h4>
       ) : (
-        <h6 className="mb-0">{utils.SecToHora(valor)}</h6>
+        <h6 className="mb-0 text-bold">{utils.SecToHora(valor)}</h6>
       )}
     </React.Fragment>
   );
