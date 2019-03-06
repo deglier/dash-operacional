@@ -28,6 +28,9 @@ const Indicadores = props => {
           AgtsFalando={AgtsFalando}
         />
       </Card>
+      <Card>
+        <Indicator indicador="Mais Antiga - Esperando" bigger valor="00:10" />
+      </Card>
       <div className="row no-gutters">
         <Card col="6">
           <Indicator indicador="TMA" valor={utils.tmaGeral(props.grupos)} />
