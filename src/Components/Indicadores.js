@@ -13,6 +13,11 @@ const Indicadores = props => {
   return (
     <div className="col-2 no-gutters flex-column">
       <Card>
+        <h2 className="card-title mb-0">
+          <Fila {...props} />
+        </h2>
+      </Card>
+      <Card>
         <NsGrafico {...props} />
       </Card>
       <Card>
