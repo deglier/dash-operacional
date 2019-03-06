@@ -2,12 +2,10 @@ import React from "react";
 import icon from "./sprite.svg";
 
 const Logo = props => {
-  console.log(props);
-
   const styles = {
     width: props.width ? props.width : "100%",
     height: props.height ? props.height : "100%",
-    fill: props.color ? props.color : "#000"
+    fill: props.color ? props.color : props.spinner ? "none" : "#000"
   };
   return (
     <svg style={styles}>

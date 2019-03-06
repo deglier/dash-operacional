@@ -1,0 +1,94 @@
+.content {
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(1, 0.13, 0.52, 0.97);
+}
+
+.content.is-show {
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(1, 0.13, 0.52, 0.97);
+}
+.neoSpinner-wrapper {
+  z-index: 3000;
+  left: 0;
+  top: 0;
+  max-width: 100vw;
+  background-color: rgb(222, 222, 222);
+  position: absolute;
+  top: 0vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  transition: all 0.3s cubic-bezier(1, 0.13, 0.52, 0.97);
+}
+
+.neoSpinner-wrapper.is-hide {
+  height: 0;
+  opacity: 0;
+  transition: all 0.3s cubic-bezier(1, 0.13, 0.52, 0.97);
+}
+
+#neoSpinner {
+  transform: scale(1.4);
+}
+
+#countdownclock {
+  position: absolute;
+  margin: 20px 0 0 -32px;
+  top: 50%;
+  left: 50%;
+  transform: rotate(60deg);
+}
+/*clock .clockline */
+#neoSpinner .neoSpinner-line {
+  fill: none;
+  stroke: rgb(142, 200, 221);
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-miterlimit: 20;
+  stroke-dasharray: 50 20;
+  stroke-dashoffset: 1100;
+  animation: draw 5s 0.2s ease-in-out infinite;
+  fill-opacity: 1;
+}
+
+@keyframes draw {
+  25% {
+    stroke: rgb(96, 177, 207);
+  }
+  50% {
+    stroke: rgb(46, 114, 179);
+  }
+  75% {
+    stroke: rgb(52, 142, 194);
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke: rgb(142, 200, 221);
+  }
+}
+
+@keyframes draw-text {
+  25% {
+    color: rgb(96, 177, 207);
+  }
+  50% {
+    color: rgb(46, 114, 179);
+  }
+  75% {
+    color: rgb(52, 142, 194);
+  }
+  100% {
+    color: rgb(142, 200, 221);
+  }
+}
+
+.neoSpinner-text {
+  margin-top: 0.8rem;
+  color: rgb(142, 200, 221);
+  font-weight: 400;
+  animation: draw-text 5s 0.2s ease-in-out infinite;
+}

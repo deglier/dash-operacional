@@ -1,4 +1,21 @@
 const utils = {
+  maximo: (objeto, atributo) => {
+    let maior = -999;
+    objeto.map(item => {
+      if (item[atributo] > maior) {
+        maior = item[atributo];
+      }
+      return maior;
+    });
+    return maior;
+  },
+  somar: (objeto, atributo) => {
+    let soma = 0;
+    objeto.map(item => {
+      soma = soma + item[atributo];
+    });
+    return soma;
+  },
   SecToHora: strHora => {
     var decimalTimeString = strHora;
     //decimalTimeString = decimalTimeString.replace(',','.');

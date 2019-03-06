@@ -6,7 +6,7 @@ const Container = props => {
   return (
     <div className="row">
       <TableList {...props} />
-      
+      <Indicadores {...props} />
     </div>
   );
 };
