@@ -3,7 +3,6 @@ import utils from "../functions";
 
 const TableRow = props => {
   const { tr } = props;
-  console.log(props);
 
   return (
     <tr className={"font-weight-" + (tr.AgtsFalando > 0 ? "bolder" : "normal")}>

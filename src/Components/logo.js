@@ -2,8 +2,6 @@ import React from "react";
 import icon from "./sprite.svg";
 
 const Logo = props => {
-  console.log(props);
-
   const styles = {
     width: props.width ? props.width : "100%",
     height: props.height ? props.height : "100%",
