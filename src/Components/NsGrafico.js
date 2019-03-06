@@ -2,7 +2,6 @@ import React from "react";
 import { Doughnut } from "react-chartjs-2";
 
 import utils from "../functions";
-import Card from "./Card";
 import { defaults } from "chart.js";
 
 defaults.global.legend.display = false;

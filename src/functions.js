@@ -13,6 +13,7 @@ const utils = {
     let soma = 0;
     objeto.map(item => {
       soma = soma + item[atributo];
+      return soma;
     });
     return soma;
   },
