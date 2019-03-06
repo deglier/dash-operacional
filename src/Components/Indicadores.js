@@ -4,6 +4,7 @@ import AgtsGrafico from "./AgtsGrafico";
 import utils from "../functions";
 import NsGrafico from "./NsGrafico";
 import Fila from "./Fila";
+import Indicator from "./indicator";
 
 const Indicadores = props => {
   const AgtsDisponiveis = utils.maximo(props.grupos, "AgtsDisponiveis");
@@ -27,6 +28,14 @@ const Indicadores = props => {
           AgtsFalando={AgtsFalando}
         />
       </Card>
+      <div className="row no-gutters">
+        <Card col="6">
+          <Indicator indicador="TMA" valor={utils.tmaGeral(props.grupos)} />
+        </Card>
+        <Card col="6">
+          <Indicator indicador="TME" valor={utils.tmeGeral(props.grupos)} />
+        </Card>
+      </div>
     </div>
   );
 };
