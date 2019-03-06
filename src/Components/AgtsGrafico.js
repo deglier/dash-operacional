@@ -1,20 +1,11 @@
 import React from "react";
 import { Pie } from "react-chartjs-2";
 import { defaults } from "chart.js";
+import "chartjs-plugin-datalabels";
 
 defaults.global.legend.display = false;
 
 const AgtsGrafico = ({ AgtsDisponiveis, AgtsPAUSA, AgtsFalando }) => {
-  const somar = valores => {
-    var total = 0;
-    for (let i = 0; i < valores.length - 1; i++) {
-      if (valores[i] > 0) {
-        total = total + valores[i];
-      }
-    }
-    return total;
-  };
-
   const cores = [
     "rgba(100,200,100,.8)",
     "rgba(0, 120,200,.8)",
