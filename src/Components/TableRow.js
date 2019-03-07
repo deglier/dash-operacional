@@ -5,7 +5,7 @@ const TableRow = props => {
   const { tr } = props;
 
   return (
-    <tr className={"font-weight-" + (tr.AgtsFalando > 0 ? "bolder" : "normal")}>
+    <tr className={"font-weight-" + (tr.AgtsFalando > 0 ? "bold" : "normal")}>
       <td>{tr.Especialidade}</td>
       <td>{tr.ChamsRecebidas}</td>
       <td>{tr.ChamsAban}</td>
@@ -28,7 +28,10 @@ const TableRow = props => {
       <td>{tr.AgtsFalando}</td>
       <td>{tr.AgtsPAUSA}</td>
       <td
-        className={"text-" + (tr.ChamMaisAntigaEsperando > 20 ? "danger" : "")}
+        className={
+          "text-" +
+          (tr.ChamMaisAntigaEsperando > 20 ? "danger font-weight-bold" : "")
+        }
       >
         {utils.SecToHora(tr.ChamMaisAntigaEsperando)}
       </td>
