@@ -5,6 +5,9 @@
 .text-bold {
   font-weight: bolder;
 }
+.hidden {
+  display: none;
+}
 .content.is-show {
   opacity: 1;
   transition: all 0.3s cubic-bezier(1, 0.13, 0.52, 0.97);

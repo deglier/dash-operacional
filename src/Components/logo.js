@@ -1,5 +1,4 @@
 import React from "react";
-import icon from "./sprite.svg";
 
 const Logo = props => {
   const styles = {
@@ -9,7 +8,7 @@ const Logo = props => {
   };
   return (
     <svg style={styles}>
-      <use xlinkHref={`${icon}#logo-${props.who}`} />
+      <use xlinkHref={`#logo-${props.who}`} />
     </svg>
   );
 };
