@@ -9,7 +9,11 @@
 
 # testing
 /coverage
+<<<<<<< HEAD
 *.csv
+=======
+*.zip
+>>>>>>> feature/Loading
 # production
 /build
 

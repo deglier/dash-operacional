@@ -11,7 +11,6 @@ const NeoSpinner = props => {
         height="73.333px"
         viewBox="0 0 63.333 73.333"
       >
-        <style type="text/css" />
         <polygon
           className="neoSpinner-line"
           points="4.701,21.098 4.701,52.235 31.667,67.804 58.632,52.235 58.632,21.098 31.667,5.529 "
