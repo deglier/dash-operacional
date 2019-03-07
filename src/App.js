@@ -5,7 +5,7 @@ import axios from "axios";
 import NeoSpinner from "./Components/neo-spinner";
 
 const theads = [
-  <span>ESPECIALIDES</span>,
+  <span>ESPECIALIDADES</span>,
   <span>
     <small>chamadas</small>
     <br /> RECEBIDAS
