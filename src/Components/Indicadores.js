@@ -15,7 +15,7 @@ const Indicadores = props => {
   return (
     <div className="col-2 no-gutters flex-column">
       <Card>
-        <h2 className="card-title mb-0">
+        <h2 className="display-4 mb-0">
           <Fila {...props} />
         </h2>
       </Card>
@@ -55,13 +55,13 @@ const Indicadores = props => {
               valor={utils.gruposByMaisAntiga(props.grupos)}
             />
           </Card>
-          <div className="row no-gutters">
-            <Card col="6">
+          <div className="row no-gutters mb-1 bg-white">
+            <div className="col text-center pt-1 pb-1">
               <Indicator indicador="TMA" valor={utils.tmaGeral(props.grupos)} />
-            </Card>
-            <Card col="6">
+            </div>
+            <div className="col text-center pt-1 pb-1">
               <Indicator indicador="TME" valor={utils.tmeGeral(props.grupos)} />
-            </Card>
+            </div>
           </div>
         </React.Fragment>
       )}
