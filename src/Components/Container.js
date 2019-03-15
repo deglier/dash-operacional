@@ -1,7 +1,6 @@
 import React from "react";
 import TableList from "./TableList";
 import Indicadores from "./Indicadores";
-import LastUpdate from "./LastUpdate";
 
 const Container = props => {
   return (
