@@ -19,25 +19,23 @@ const TableList = props => {
   };
 
   return (
-    <div className="col">
-      <div className="card">
-        <div className="card-body">
-          <table
-            className="table table-bordered table-striped table-sm bg-white mb-0"
-            style={{ fontSize: ".6rem", textAlign: "center" }}
-          >
-            <thead style={{ textTransform: "uppercase" }}>
-              <tr>
-                {theads.map((thh, i) => (
-                  <th key={i}>{thh}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody style={{ fontSize: ".7rem" }}>
-              {fila > 0 ? filterbyOld() : filterbyNS()}
-            </tbody>
-          </table>
-        </div>
+    <div className="card">
+      <div className="card-body">
+        <table
+          className="table table-bordered table-striped table-sm bg-white mb-0"
+          style={{ fontSize: ".6rem", textAlign: "center" }}
+        >
+          <thead style={{ textTransform: "uppercase" }}>
+            <tr>
+              {theads.map((thh, i) => (
+                <th key={i}>{thh}</th>
+              ))}
+            </tr>
+          </thead>
+          <tbody style={{ fontSize: ".7rem" }}>
+            {fila > 0 ? filterbyOld() : filterbyNS()}
+          </tbody>
+        </table>
       </div>
     </div>
   );

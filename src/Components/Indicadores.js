@@ -5,6 +5,7 @@ import utils from "../functions";
 import NsGrafico from "./NsGrafico";
 import Fila from "./Fila";
 import Indicator from "./indicator";
+import LastUpdate from "./LastUpdate";
 
 const Indicadores = props => {
   const AgtsDisponiveis = utils.maximo(props.grupos, "AgtsDisponiveis");
@@ -64,6 +65,9 @@ const Indicadores = props => {
           </div>
         </React.Fragment>
       )}
+      <div className="row">
+        <LastUpdate {...props} />
+      </div>
     </div>
   );
 };

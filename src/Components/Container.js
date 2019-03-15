@@ -7,11 +7,10 @@ const Container = props => {
   return (
     <React.Fragment>
       <div className="row">
-        <TableList {...props} />
+        <div className="col">
+          <TableList {...props} />
+        </div>
         <Indicadores {...props} />
-      </div>
-      <div className="row">
-        <LastUpdate {...props} />
       </div>
     </React.Fragment>
   );
