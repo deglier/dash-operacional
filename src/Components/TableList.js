@@ -6,14 +6,14 @@ const TableList = props => {
 
   const filterbyOld = () => {
     return grupos
-      .filter(v => v.ChamsRecebidas > 0)
+      .filter(v => v.Skill !== 463)
       .sort((a, b) => b.ChamMaisAntigaEsperando - a.ChamMaisAntigaEsperando)
       .map((tr, i) => <TableRow tr={tr} key={i} />);
   };
 
   const filterbyNS = () => {
     return grupos
-      .filter(v => v.ChamsRecebidas > 0)
+      .filter(v => v.Skill !== 463)
       .sort((a, b) => a.NS20Seg - b.NS20Seg)
       .map((tr, i) => <TableRow tr={tr} key={i} />);
   };
