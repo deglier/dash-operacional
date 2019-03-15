@@ -50,7 +50,7 @@ const Indicadores = props => {
         <React.Fragment>
           <Card>
             <Indicator
-              indicador="Chamada Mais Antiga"
+              indicador="Cham. Mais Antiga"
               bigger
               valor={utils.gruposByMaisAntiga(props.grupos)}
             />
