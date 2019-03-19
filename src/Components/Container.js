@@ -1,13 +1,20 @@
 import React from "react";
-import TableList from "./TableList";
 import Indicadores from "./Indicadores";
+import TableList from "./TableList";
 
 const Container = props => {
+  const componentToShow =
+    props.render[props.indexValue] === undefined ? (
+      <TableList {...props} />
+    ) : (
+      props.render[props.indexValue]
+    );
+
   return (
     <React.Fragment>
       <div className="row">
         <div className="col">
-          <TableList {...props} />
+          {props.changeIt ? componentToShow : <TableList {...props} />}
         </div>
         <Indicadores {...props} />
       </div>
