@@ -6,6 +6,11 @@
 .pnp.js
 
 *.csv
+*.PNG
+*.png
+*.jpg
+*.JPG
+*.jpeg
 
 # testing
 /coverage
